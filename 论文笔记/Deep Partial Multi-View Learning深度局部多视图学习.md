@@ -1,6 +1,8 @@
 ## 【阅读笔记】《Deep Partial Multi-View Learning》
 题目中译：深度局部多视图学习
 
+亮点：在非监督学习上使用对抗算法来补全缺失数据
+
 ## ●Abstract
 
 -   question作者想解决什么问题？

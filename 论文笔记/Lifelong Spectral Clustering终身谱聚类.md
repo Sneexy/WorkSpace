@@ -1,12 +1,14 @@
 # 论文笔记：《Lifelong Spectral Clustering》
 ## 目录
-
  1. 论文信息
  2. 个人总结
  3. 谱聚类
  4. 论文做了什么（Abstract）
  5. 公式解读
 发布在了CSDN上，可以更方便看公式，[链接](https://blog.csdn.net/qq_33810513/article/details/110676203)
+
+亮点：通过谱聚类的目标函数的矩阵分解，获得多任务共享项，以此实现终身学习，加快收敛速度
+
 ## 论文信息
 题目：Lifelong Spectral Clustering ，终身谱聚类
 
