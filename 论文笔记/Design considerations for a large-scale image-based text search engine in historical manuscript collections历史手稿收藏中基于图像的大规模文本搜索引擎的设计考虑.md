@@ -1,8 +1,6 @@
-##  论文笔记：《》
+##  论文笔记：《Design considerations for a large-scale image-based text search engine in historical manuscript collections》
+中译：历史手稿收藏中基于图像的大规模文本搜索引擎的设计考虑
 
-中译：
-
-总结：
 
 ## ●Abstract
 
