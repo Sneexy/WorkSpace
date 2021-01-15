@@ -10,4 +10,6 @@
 - 如何用LaTeX编写分数？`$\frac{分子}{分母}$`
 - 如何用latex编写上标、下标？`$X_下^上$`
 
+## 样式
+- [文字格式（字体、大小、颜色）](https://blog.csdn.net/ambitionxzz/article/details/104379287)，<font color=red>字</font> 
 

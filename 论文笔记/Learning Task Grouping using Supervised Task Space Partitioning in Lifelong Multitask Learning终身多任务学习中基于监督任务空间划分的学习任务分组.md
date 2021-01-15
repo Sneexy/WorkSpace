@@ -53,14 +53,14 @@ ELLA:高效终身学习算法，或ELLA，是一种终身多任务学习算法[7
     - 针对负面信息传递的验证（负面信息没什么影响）
 -   模型步骤 + 每个步骤得出的结论
 ![](Learning%20Task%20Grouping%20using%20Supervised%20Task%20Space%20Partitioning%20in%20Lifelong%20Multitask%20Learning%E7%BB%88%E8%BA%AB%E5%A4%9A%E4%BB%BB%E5%8A%A1%E5%AD%A6%E4%B9%A0%E4%B8%AD%E5%9F%BA%E4%BA%8E%E7%9B%91%E7%9D%A3%E4%BB%BB%E5%8A%A1%E7%A9%BA%E9%97%B4%E5%88%92%E5%88%86%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%BB%BB%E5%8A%A1%E5%88%86%E7%BB%84_md_files/image2.png?v=1&type=image)
-	- **任务空间的监督划分**：以监督方式学习划分函数来聚类任务。R为经验损失函数，$u_i$表示区域i中所有任务的通用模型，$v_t$是特定于任务的模型，$\theta$是将输入数据Xt映射到给定任务t的输出yt的函数，代表任务t。l是损失函数，测量均方误差。
+	- **任务空间的监督划分**：以监督方式学习划分函数来聚类任务。R为经验损失函数，$u_i$表示区域i中所有任务的通用模型，$v_t$是特定于任务t的模型，$\theta$是将输入数据Xt映射到给定任务t的输出yt的函数，代表任务t。l是损失函数，测量均方误差。
 ![](Learning%20Task%20Grouping%20using%20Supervised%20Task%20Space%20Partitioning%20in%20Lifelong%20Multitask%20Learning%E7%BB%88%E8%BA%AB%E5%A4%9A%E4%BB%BB%E5%8A%A1%E5%AD%A6%E4%B9%A0%E4%B8%AD%E5%9F%BA%E4%BA%8E%E7%9B%91%E7%9D%A3%E4%BB%BB%E5%8A%A1%E7%A9%BA%E9%97%B4%E5%88%92%E5%88%86%E7%9A%84%E5%AD%A6%E4%B9%A0%E4%BB%BB%E5%8A%A1%E5%88%86%E7%BB%84_md_files/image1.png?v=1&type=image)
 	- **寻找单分区函数**
 	分区i的模型给出较低误差，则标签为i。经验风险是对这些任务进行分类的加权误差
 	- **多区域划分的任务空间**
 	给定分区函数的值，我们知道给定任务所属的区域。
 	- **任务空间的在线划分**
-	通过最小损失函数（7），利用随机梯度算法获取$u_i$
+	通过最小损失函数（7），利用随机梯度算法获取$u_i$（ur是region特有的模型，vt是task特有的模型）
 	- Algorithm 1里更新partition function的**Algorithm 2**：
 	t是第一个任务就作为根结点。
 	否则就while循环到叶子节点，更新partition函数g
