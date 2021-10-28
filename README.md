@@ -1,5 +1,7 @@
 # WorkSpace
 
+知识库/：在建中，DailyRecord不继续更新
+
 DailyRecord/ ： 每日学习/工作心得
 
 markdown_use.md ： 平时使用过的markdown语法
