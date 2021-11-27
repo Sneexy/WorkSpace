@@ -4,6 +4,7 @@
 - [设计模式](#设计模式)
 - [Android](#Android)
 - [Java](#Java)
+- [Kotlin](#Kotlin)
 - [软件](#软件)
   - [Android Studio](#Android_Studio)
   - [Xcode（for iOS）](#Xcode_for_iOS)
@@ -39,29 +40,11 @@
   - 什么是WebView？ 
     答：Android内置webkit内核的高性能浏览器,而WebView则是在这个基础上进行封装后的一个 控件,WebView直译网页视图,我们可以简单的看作一个可以嵌套到界面上的一个浏览器控件 
   - [WebView全面解析](https://www.jianshu.com/p/3e0136c9e748)
-
-
-
-# Java
-
-- [同步锁synchronized](https://www.cnblogs.com/weibanggang/p/9470718.html)
-
-- 函数和listener的调用顺序：[listener的执行先后问题 - @si - 博客园](https://www.cnblogs.com/withasi/archive/2012/05/03/2481031.html)，函数先，listener后
-
-- [java中的 getInstance() 的理解](https://blog.csdn.net/qq_26293573/article/details/78184844)，在单例模式中使用，获取一个static实例。
-
-- [Java 到底是值传递还是引用传递？ - Hollis的回答 - 知乎](https://www.zhihu.com/question/31203609/answer/576030121)
-
-- [JSON put ,accumulate,element 区别 - 掘金](https://juejin.cn/post/6844903903922749447) 
-
-- [Java定时任务的三种实现方式](https://www.jb51.net/article/155453.htm),Timer() 
-
-- Java map时key不存在，会返回null，[Kotlin集合类型之Map、MutableMap](https://blog.csdn.net/alfredkao/article/details/106950050)
-
-- [JAVA中final关键字的作用 - 虎啸千峰 - 博客园](https://www.cnblogs.com/chhyan-dream/p/10685878.html)
+- [[Junit\] 测试方法执行顺序 - androidme - 博客园](https://www.cnblogs.com/androidme/p/3540680.html)
+- [ViewTreeObserver](https://developer.android.com/reference/kotlin/android/view/ViewTreeObserver)
+  - OnPreDrawListener、OnPreDraw()函数和OnDrawListener()函数的listener都在此文件夹里。listener集合的加减有addOnPreDrawListener和removeOnPreDrawListener。 
 
 - recyclerView的回收和复用 
-
   - [Android基础知识-RecyclerView的复用和回收机制_笨鸟的专栏-CSDN博客_android recyclerview 复用](https://blog.csdn.net/u010577768/article/details/102835040) 
   - 缓存
     - mCachedViews 一级缓存：ViewHolder数据还在，只有原来的position可用，不需要重新绑定数据；
@@ -75,7 +58,69 @@
     - 如果 mCachedViews 满了（容量2），则 mCachedViews 移除第一个，用来放要回收的 ViewHolder 
     - 如果 RecycledViewPool 对应 viewType 的 List 没满（容量5），则从 mCachedViews 移除的 ViewHolder 放入**RecycledViewPool**。
 
-- [Android的Listener用法 - JJ_S - 博客园](https://www.cnblogs.com/vivian187/p/12789950.html) 
+- RecyclerView里放置多个view
+  - Demo的制作：
+    -  [使用 RecyclerView 创建动态列表  |  Android 开发者  |  Android Developers](#kotlin) 
+    - [RecyclerView的使用（一）：基本使用](https://www.jianshu.com/p/7a7d9301b2f1) 
+    - https://github.com/wangzailfm/RvAdapterForKotlin 
+    - [Android开发实践七:一个界面显示多个layout或view_zcc9618的博客-CSDN博客_android 多个界面](https://blog.csdn.net/zcc9618/article/details/80632320) 
+    - [Android RecyclerView-segmentfaul](https://segmentfault.com/a/1190000013314654) 
+  - 扩展-ScrollView，addView 
+    - [让你的布局滚动起来—ScrollView](https://segmentfault.com/a/1190000020157255)
+    - [Android ViewGroup 中 addView 方法使用详解_G的博客-CSDN博客](https://blog.csdn.net/qq_37381177/article/details/111592575) 
+    - [Android动态添加View之addView的用法 - 新感觉 - 博客园](https://www.cnblogs.com/xgjblog/p/14048402.html)
+
+
+
+# Java
+
+- [同步锁synchronized](https://www.cnblogs.com/weibanggang/p/9470718.html)
+- listener
+  - [Android的Listener用法 - JJ_S - 博客园](https://www.cnblogs.com/vivian187/p/12789950.html) 
+  - 函数和listener的调用顺序：[listener的执行先后问题 - @si - 博客园](https://www.cnblogs.com/withasi/archive/2012/05/03/2481031.html)，函数先，listener后
+- [java中的 getInstance() 的理解](https://blog.csdn.net/qq_26293573/article/details/78184844)，在单例模式中使用，获取一个static实例。
+- [Java 到底是值传递还是引用传递？ - Hollis的回答 - 知乎](https://www.zhihu.com/question/31203609/answer/576030121)
+- JSON
+  - [JSON put ,accumulate,element 区别 - 掘金](https://juejin.cn/post/6844903903922749447) 
+  - [com.alibaba.fastjson和org.json遍历获取key - zipon - 博客园](https://www.cnblogs.com/zipon/p/7399505.html) 使用法2，java遍历json 
+- [Java定时任务的三种实现方式](https://www.jb51.net/article/155453.htm),Timer() 
+- Java map时key不存在，会返回null，[Kotlin集合类型之Map、MutableMap](https://blog.csdn.net/alfredkao/article/details/106950050)
+- [JAVA中final关键字的作用 - 虎啸千峰 - 博客园](https://www.cnblogs.com/chhyan-dream/p/10685878.html)
+- [Java 使用 throw 抛出异常](https://blog.csdn.net/weixin_43819113/article/details/91468459)
+- 线程休眠
+  - [Thread.Sleep线程休眠](https://blog.csdn.net/song854601134/article/details/111290759)：表示接下来多少毫秒此进程/线程不参与抢占CPU的竞争 
+  - [为什么在用Thread.sleep()总在加try{}catch(){}语句?-CSDN论坛](https://bbs.csdn.net/topics/110081671)：因为sleep本身会跑抛出异常。 
+- 设置函数参数默认值（JAVA不能设置默认参数
+  - [java 能为方法参数设置默认参数吗](https://zhidao.baidu.com/question/383805542.html)
+  - [java通过函数的重载来实现函数参数默认值_WZH577的博客-CSDN博客](https://blog.csdn.net/WZH577/article/details/101604622)
+
+
+
+# Kotlin
+
+- [Kotlin入门篇之--HelloWord_QJay.Dev-CSDN博客](https://blog.csdn.net/qJay_Dev/article/details/50812954)（目前和Java兼容，可以互相引用）
+- [Kotlin 教程 - 菜鸟教程](https://www.runoob.com/kotlin/kotlin-tutorial.html)（优点：简洁安全，谷歌从2017开发Android用Kotlin） 
+  - 基础语法差不多
+  - 类和对象：属性（getter 和 setter，主构造器，次构造函数，抽象类abstract，嵌套类，内部类inner，匿名内部类，类的修饰符） 
+  - 继承，接口（定义格式不一定定义操作） 
+  - 扩展（Kotlin可以为一个类扩展一个新功能，但是不必继承该类或使用设计模式）数据类和密封类（枚举的延伸，可以不止一种数据类型） 
+  - 范型 
+  - 枚举 
+  - 对象表达式和对象声明（实现创建一个对某个类做了轻微改动的类的对象，且不需要去声明一个新的子类） 
+  - 委托（软件设计模式中的一项基本技巧。在委托模式中，有两个对象参与处理同一个请求，接受请求的对象将请求委托给另一个对象来处理。Kotlin 通过关键字 by 直接实现委托。） 
+- kt的问号：定义变量时，可在变量后添加“?”表示此变量可为空
+
+
+
+# 内核
+
+- JAVA相关
+  - [技术随笔之谈架构中Glue机制设计](https://zhuanlan.zhihu.com/p/160169235) 
+  - Java垃圾回收：[图解Java 垃圾回收机制](https://blog.csdn.net/justloveyou_/article/details/71216049)，[Java性能优化之JVM GC（垃圾回收机制）](https://zhuanlan.zhihu.com/p/25539690) 
+  - Java反射[Java高级篇（四）——反射](https://www.cnblogs.com/adamjwh/p/9683705.html)，[详解 Java 类加载与反射（笔记）](https://blog.csdn.net/weixin_44544465/article/details/108092733) 
+  - Java JNI：[java jni简介](https://blog.csdn.net/xdw1985829/article/details/6900178)，[Java JNI的使用基础](https://www.cnblogs.com/zenny-chen/archive/2012/06/15/2550114.html)，[Java 之JNI基础篇(一)](https://arcticfox.blog.csdn.net/article/details/79053061)（JNI编写流程-图），[Java 之JNI基础篇(二)](https://arcticfox.blog.csdn.net/article/details/79080462) 
+  - 
+  - 
 
 
 
@@ -177,6 +222,9 @@
 - vim
   - vim： :wq! //按【:wq!】 强制保存后离开 
   - 复制剪切粘贴：https://cloud.tencent.com/developer/article/1626821 
+- [Getting Clear read only status on Webstorm 8](https://stackoverflow.com/questions/25396984/getting-clear-read-only-status-on-webstorm-8)：read only时，修改文件夹权限 
+
+
 
 ## Code diff
 
