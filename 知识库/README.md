@@ -5,6 +5,7 @@
 - [Android](#Android)
 - [Java](#Java)
 - [Kotlin](#Kotlin)
+- [matlab](#matlab)
 - [软件](#软件)
   - [Android Studio](#Android_Studio)
   - [Xcode（for iOS）](#Xcode_for_iOS)
@@ -119,8 +120,16 @@
   - Java垃圾回收：[图解Java 垃圾回收机制](https://blog.csdn.net/justloveyou_/article/details/71216049)，[Java性能优化之JVM GC（垃圾回收机制）](https://zhuanlan.zhihu.com/p/25539690) 
   - Java反射[Java高级篇（四）——反射](https://www.cnblogs.com/adamjwh/p/9683705.html)，[详解 Java 类加载与反射（笔记）](https://blog.csdn.net/weixin_44544465/article/details/108092733) 
   - Java JNI：[java jni简介](https://blog.csdn.net/xdw1985829/article/details/6900178)，[Java JNI的使用基础](https://www.cnblogs.com/zenny-chen/archive/2012/06/15/2550114.html)，[Java 之JNI基础篇(一)](https://arcticfox.blog.csdn.net/article/details/79053061)（JNI编写流程-图），[Java 之JNI基础篇(二)](https://arcticfox.blog.csdn.net/article/details/79080462) 
-  - 
-  - 
+
+
+
+# matlab
+
+- 数组的矩阵
+  - [matlab中怎么创建矩阵的数组，就是数组的元素是矩阵_百度知道 (baidu.com)](https://zhidao.baidu.com/question/1819609523544301908.html)
+  - [【Matlab基础】02. 矩阵与元胞数组 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/25401241) 可以使用三维矩阵和元胞数组实现
+    - 三维矩阵是m×n×k表示k个m×n的矩阵，规则的形状
+  - 多维数组的创建 [创建全零数组 - MATLAB zeros - MathWorks 中国](https://ww2.mathworks.cn/help/matlab/ref/zeros.html)
 
 
 
@@ -224,7 +233,7 @@
   - 复制剪切粘贴：https://cloud.tencent.com/developer/article/1626821 
 - [Getting Clear read only status on Webstorm 8](https://stackoverflow.com/questions/25396984/getting-clear-read-only-status-on-webstorm-8)：read only时，修改文件夹权限 
 
-
+<a id="Code_diff"></a>
 
 ## Code diff
 
