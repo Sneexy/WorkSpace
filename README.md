@@ -1,5 +1,9 @@
 # WorkSpace
 
+善用搜索
+
+
+
 知识库/：在建中，DailyRecord不继续更新
 
 DailyRecord/ ： 每日学习/工作心得
